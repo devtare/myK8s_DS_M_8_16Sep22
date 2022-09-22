@@ -4,7 +4,7 @@ metadata:
   name: myjavaapp-deploy
   labels:
     app: myjavaapp
-  spec:
+spec:
   replicas: 3
   selector:
      matchlabels: 
@@ -12,8 +12,8 @@ metadata:
   
   template:
      metadata:
-      labels:
-        app: myjavaapp           
+       labels:
+         app: myjavaapp           
      spec:
       containers:
         - name: myjavaapp-container
